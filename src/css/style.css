@@ -1110,7 +1110,7 @@ button {
   line-height: 3rem;
 }
 .navigation__link:hover {
-  border-bottom: 5px solid #eff9ff;
+  border-bottom: 2px solid #eff9ff;
 }
 .navigation__btns {
   justify-self: end;
