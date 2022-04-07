@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tigristrade</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Country-Selecter-with-Flags-flagstrap/dist/css/flags.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <a href="#">
+        <figure class="navigation__logo">
+          <img src="img/logo.png" alt="logo" />
+        </figure>
+      </a>
+
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">trade</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">portfolio</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">trader profile</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">vault</a>
+        </li>
+      </ul>
+
+      <div class="navigation__btns">
+        <form>
+            <div class="form-group">
+                <div class="select-country" data-input-name="country2" data-selected-country="US">
+                </div>
+            </div>
+        </form>
+        <button class="navigation__btn btn bg-white">connect</button>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="left-sidebar">
+        <div class="markets mb-3 card">
+          <div class="markets__heading px-2">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#icon-Group-9"></use>
+            </svg>
+            <h4 class="heading">markets</h4>
+            <svg class="icon icon-chevron">
+              <use xlink:href="img/icons.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+          <div class="markets__search">
+            <form action="#" class="markets__form">
+              <input
+                type="text"
+                placeholder="search a spacific pair..."
+                class="markets__input"
+              />
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#icon-search"></use>
+              </svg>
+            </form>
+          </div>
+          <div class="markets__btns py-1">
+            <button class="markets__btn uppercase">YAXIS</button>
+            <div class="line"></div>
+            <button class="markets__btn uppercase">usd</button>
+          </div>
+          <ul class="list">
+            <li class="item head">
+              <span class="col-1">pair</span>
+              <span class="col-2">price</span>
+              <span class="col-3">24hr</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-logo"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-green">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <img src="img/markets-logo.png" class="mr-2" alt="" />
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-red">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-logo-2"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-green">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-logo-3"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-red">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-logo-4"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-green">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-path862"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-red">+0.40%</span>
+            </li>
+            <li class="item">
+              <span class="col-1">
+                <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-convex"></use>
+                </svg>
+                YAXIS/USD</span
+              >
+              <span class="col-2">125.435</span>
+              <span class="col-3 color-red">+0.40%</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="markets conversation card">
+          <div class="markets__heading px-2">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#icon-Group-10"></use>
+            </svg>
+            <h4 class="heading">Join The Conversation</h4>
+            <svg class="icon icon-chevron">
+              <use xlink:href="img/icons.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+
+          <div class="markets__btns py-1">
+            <button class="markets__btn">
+              <svg class="icon icon-chevron mr-1">
+                <use xlink:href="img/icons.svg#icon-chat"></use>
+              </svg>
+              chat
+            </button>
+            <div class="line"></div>
+            <button class="markets__btn">
+              <svg class="icon icon-chevron mr-1">
+                <use xlink:href="img/icons.svg#icon-twitter"></use>
+              </svg>
+              twitter
+            </button>
+          </div>
+          <ul class="list">
+            <li class="item">
+              <figure class="user-photo bg-blue">
+                <img src="img/user-photo.png" alt="user photo" />
+              </figure>
+              <div>
+                <div class="details mb-2">
+                  <h5 class="heading color-blue">Mr. Nobody</h5>
+                  <span>-</span>
+                  <div class="message-time">16 minutes ago</div>
+                </div>
+                <div class="message">Chat text goes here...</div>
+              </div>
+            </li>
+            <li class="item">
+              <figure class="user-photo bg-pink">
+                <img src="img/user-photo.png" alt="user photo" />
+              </figure>
+              <div>
+                <div class="details mb-2">
+                  <h5 class="heading color-pink">maria</h5>
+                  <span>-</span>
+                  <div class="message-time">16 minutes ago</div>
+                </div>
+                <div class="message">Chat text goes here...</div>
+              </div>
+            </li>
+            <li class="item">
+              <figure class="user-photo bg-blue">
+                <img src="img/user-photo.png" alt="user photo" />
+              </figure>
+              <div>
+                <div class="details mb-2">
+                  <h5 class="heading color-blue">Mr. Nobody</h5>
+                  <span>-</span>
+                  <div class="message-time">16 minutes ago</div>
+                </div>
+                <div class="message">Chat text goes here...</div>
+              </div>
+            </li>
+            <li class="item">
+              <figure class="user-photo bg-pink">
+                <img src="img/user-photo.png" alt="user photo" />
+              </figure>
+              <div>
+                <div class="details mb-2">
+                  <h5 class="heading color-pink">Maria</h5>
+                  <span>-</span>
+                  <div class="message-time">16 minutes ago</div>
+                </div>
+                <div class="message">Chat text goes here...</div>
+              </div>
+            </li>
+            <li class="item">
+              <figure class="user-photo bg-blue">
+                <img src="img/user-photo.png" alt="user photo" />
+              </figure>
+              <div>
+                <div class="details mb-2">
+                  <h5 class="heading color-blue">Mr. Nobody</h5>
+                  <span>-</span>
+                  <div class="message-time">16 minutes ago</div>
+                </div>
+                <div class="message">Chat text goes here...</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="markets__search">
+            <form action="#" class="markets__form">
+              <input
+                type="text"
+                placeholder="Have something to say?"
+                class="markets__input"
+              />
+              <svg class="icon icon-cam mr-2">
+                <use xlink:href="img/icons.svg#icon-Vector-1"></use>
+              </svg>
+              <svg class="icon icon-submit">
+                <use xlink:href="img/icons.svg#icon-Vector"></use>
+              </svg>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+        <div class="yAxis mb-3">
+          <img src="./img/chart1.svg" alt="chart">
+        </div>
+        <div class="position mb-3">
+          <div class="position__nav">
+            <div class="position__btns">
+              <button class="position__btn">All Positions</button>
+              <button class="position__btn">My Positions</button>
+            </div>
+            <svg class="icon icon-chevron">
+              <use xlink:href="img/icons.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+ 
+          <table class="position__table">
+            <tr class="position__rows">
+              <th>USER</th>
+              <th>SIZE</th>
+              <th>LEVERAGE</th>
+              <th>OPEN PRICE</th>
+              <th>PNL</th>
+              <th>TAKE PROFIT</th>
+              <th>STOP LOSS</th>
+              <th>TYPE</th>
+            </tr>
+
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-red">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-green">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-red">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-green">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-red">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+            <tr>
+              <td class="opacity-1">User Name</td>
+              <td class="opacity-half">$25.43</td>
+              <td class="opacity-half">30</td>
+              <td class="opacity-half">$4546.67</td>
+              <td class="opacity-1 color-green">-0.80%</td>
+              <td class="opacity-half">none</td>
+              <td class="opacity-half">None</td>
+              <td class="opacity-half">Long</td>
+            </tr>
+
+            
+          </table>
+        </div>
+
+        <div class="position performance mb-3">
+          <div class="position__nav">
+            <h4 class="heading">Historical Performance</h4>
+            <svg class="icon icon-chevron">
+              <use xlink:href="img/icons.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+          <div class="performance__btc">
+            <p class="text">
+              <span>Total PNL (BTC):</span>
+              <span>|</span>
+              <span class="color-red">-0.4853</span>
+              <span>Daily PNL (BTC):</span>
+              <span class="color-green">0.000</span>
+            </p>
+          </div>
+
+          <div class="btc ">
+            <div class="btc__nav mb-7">
+              <h4 class="heading">btc</h4>
+              <div class="right">
+                <div class="pnl">
+                  <span class="bg-blue"></span>
+                  total pnl
+                </div>
+                <span>|</span>
+                <div class="pnl">
+                  <span class="bg-pink"></span>
+                  daily pnl
+                </div>
+              </div>
+            </div>
+
+            <div class="btc__list">
+              <div class="btc__item mb-5">
+                <h5 class="heading">0.0000</h5>
+                <div class="border border-1"></div>
+              </div>
+              <div class="btc__item mb-5">
+                <h5 class="heading">-0.1016</h5>
+                <div class="border border-middle"></div>
+              </div>
+              <div class="btc__item mb-5">
+                <h5 class="heading">-0.2032</h5>
+                <div class="border border-middle"></div>
+              </div>
+              <div class="btc__item mb-5">
+                <h5 class="heading">-0.3048</h5>
+                <div class="border border-middle"></div>
+              </div>
+              <div class="btc__item mb-5">
+                <h5 class="heading">-0.4064</h5>
+                <div class="border border-last"></div>
+              </div>
+              <div class="btc__item mb-5">
+                <h5 class="heading none">-0.4064</h5>
+                <div class="dates">
+                  <h5 class="heading">22 . 3 . 2022</h5>
+                  <h5 class="heading">28 . 3 . 2022</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="btc__btns">
+              <button class="btn btn-primary">7days</button>
+              <button class="btn btn-primary">30days</button>
+              <button class="btn btn-primary">90days</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar">
+        <div class="card mb-3">
+          <div class="card__btns">
+            <button class="card__btn">long</button>
+            <button class="card__btn">short</button>
+          </div>
+
+          <form action="#" class="card__form">
+            <div class="card__list">
+              <div class="item mb-2">
+                <label for="order" class="order">order type:</label>
+                <select id="order">
+                  <option value="market" selected>market</option>
+                  <option value="market1">market1</option>
+                  <option value="market3">market3</option>
+                  <option value="market4">market4</option>
+                </select>
+              </div>
+              <div class="item mb-2">
+                <label for="order">Position Size</label>
+                <div class="input">
+                  <input type="number" class="" placeholder="72" />
+                  <button class="max">max</button>
+                </div>
+              </div>
+
+              <div class="item mb-2">
+                <label for="order">Leverage (5x- 150x)</label>
+                <div class="input">
+                  <input type="number" class="" placeholder="72" />
+                </div>
+                <input type="range" class="range" name="" id="" />
+              </div>
+
+              <div class="item mb-2">
+                <label for="order">Margin (10 - 75000)</label>
+                <div class="input">
+                  <input type="number" class="" placeholder="34991.6" />
+                </div>
+                <input type="range" class="range" name="" id="" />
+              </div>
+
+              <div class="item mb-2">
+                <label for="order">Price (0.1% spread)</label>
+                <div class="input">
+                  <input type="number" class="" placeholder="21067.2" />
+                </div>
+              </div>
+
+              <div class="item mb-2">
+                <label for="order">Slippage (%)</label>
+                <div class="input">
+                  <input type="number" class="" placeholder="8" />
+                </div>
+              </div>
+
+              <div class="item mb-2">
+                <input
+                  type="text"
+                  class="last-input"
+                  placeholder="2.5M DAI | FEE: 1.5K DAI | LIQ: 20966.9"
+                />
+              </div>
+            </div>
+            <div class="card__loss">
+              <h6 class="heading mb-1">
+                Stop loss
+                <span class="color-red">(None)</span>
+              </h5>
+              <input
+                type="range"
+                name="range"
+                id=""
+                class="range card__loss--range"
+              />
+              <label for="">-25%</label>
+            </div>
+
+            <div class="card__profit">
+              <h6 class="heading mb-1">
+                Stop loss
+                <span class="color-green">(None)</span>
+              </h5>
+              <input
+                type="range"
+                name="range"
+                id=""
+                class="range card__loss--range"
+              />
+              <label for="">-25%</label>
+            </div>
+
+            <div class="interest ">
+              <p class="text uppercase center">
+                <span class="mr-1">OPEN INTEREST: 9.9k / 2M YFI/USD</span>
+                <span class="mr-1">|</span>
+                <span class="color-red">WALLET NOT CONNECTED.</span>
+              </p>
+            </div>
+            <div class="submit-button">
+              <button type="submit" class="btn btn-submit bg-blue">approve</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card vault">
+          <div class="markets__heading px-2">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#icon-Group-8"></use>
+            </svg>
+            <h4 class="heading">vault</h4>
+            <svg class="icon icon-chevron">
+              <use xlink:href="img/icons.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </div>
+          <form action="#" class="vault__form">
+            <ul class="list pt-2">
+              <li class="item mb-2">
+                <div class="name">
+                  <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-vault-1"></use>
+                </svg>
+                <h4 class="heading">deposit</h4>
+                </div>
+                <div class="form__input">
+                  <input type="text" placeholder="0">
+                  <button class="btn-max">max</button>
+                </div>
+              </li>
+              <li class="item mb-4">
+                <div class="name">
+                  <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-vault-3"></use>
+                </svg>
+                <h4 class="heading">Swap</h4>
+                </div>
+                <div class="form__input">
+                  <input type="text" placeholder="0">
+                  <button class="btn-max">max</button>
+                </div>
+              </li>
+              <li class="item mb-4">
+                <div class="name">
+                  <svg class="icon mr-2">
+                  <use xlink:href="img/icons.svg#icon-vault-2"></use>
+                </svg>
+                <h4 class="heading">Withdraw</h4>
+                </div>
+                <div class="form__input">
+                  <input type="text" placeholder="0">
+                  <button class="btn-max">max</button>
+                </div>
+              </li>
+            </ul>
+            <div class="submit-button">
+              <button type="submit" class="btn btn-submit bg-blue">approve</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="chat">
+      <div class="chat__nav">
+        <figure class="chat__user">
+          <img src="img/chat-user.png" alt="user">
+        </figure>
+        <div class="user-details">
+          <h5 class="heading mb-1">How can we help you?</h5>
+          <p class="text">We are online</p>
+        </div>
+        <button class="chat__close">
+          <svg class="icon"><use xlink:href="img/icons.svg#icon-clear"></use></svg>
+        </button>
+      </div>
+      <div class="chat__box">
+        <p class="text center">chat started</p>
+      </div>
+      <div class="chat__dielog">
+        <svg class="icon"><use xlink:href="img/icons.svg#icon-footer-icon-2"></use></svg>
+        <p class="text">This chat connects directly to our Discord Server
+</p>
+      </div>
+
+      <div class="chat__form">
+        <input type="text" placeholder="Type your message here..." class="input">
+        <button type="submit" class="submit-btn">
+          <svg class="icon"><use xlink:href="img/icons.svg#icon-send-message"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="left">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">security</a>
+          </li>
+          <li class="item">
+            <a href="#" class="footer__link">We're Hiring</a>
+          </li>
+        </ul>
+      </div>
+      <div class="middle">
+        <p class="center mb-1">SECURED BY</p>
+        <div class="copyright">
+          <img src="img/footer-img-1.png" alt="">
+          <span>&</span>
+          <img src="img/footer-img-2.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-footer-icon-1"></use></svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-footer-icon-2"></use></svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-footer-icon-3"></use></svg>
+            </a>
+          </li>
+          <li class="footer__item mr-4">
+            <a href="#" class="footer__link">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-footer-icon-4"></use></svg>
+            </a>
+          </li>
+          
+          <li class="footer__item">
+            <a href="#" class="footer__link arrow-btn">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-arrow-up"></use></svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link message-btn">
+              <svg class="icon"><use xlink:href="img/icons.svg#icon-message-icon"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Country-Selecter-with-Flags-flagstrap/dist/js/jquery.flagstrap.js"></script>
+    <script src="js/language.js"></script>
+  </body>
+</html>

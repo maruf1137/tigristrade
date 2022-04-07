@@ -1,0 +1,99 @@
+h4.heading {
+	font-size: 1.8rem;
+	color: $color-white;
+	font-weight: 800;
+	line-height: 3.3rem;
+}
+
+h5.heading {
+	font-size: 1.7rem;
+	font-weight: 700;
+	line-height: 3rem;
+}
+
+h6.heading {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.text {
+	font-size: 1.8rem;
+	color: $color-white;
+}
+
+// Typography utils
+
+.block {
+	display: block;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.marginXAuto {
+	margin: 0 auto;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.bg-white {
+	background-color: $color-white;
+}
+.bg-black {
+	background-color: $color-black;
+}
+.bg-primary {
+	background-color: $color-primary;
+}
+.bg-secondary {
+	background-color: $color-secondary;
+}
+
+.color-green {
+	color: #01bf92;
+}
+.color-red {
+	color: #ff5858;
+}
+.color-blue {
+	color: #0145d1;
+}
+.color-pink {
+	color: #a812d7;
+}
+.bg-blue {
+	background-color: #0145d1;
+}
+.bg-pink {
+	background-color: #a812d7;
+}
+.opacity-1 {
+	opacity: 1;
+}
+.opacity-half {
+	opacity: 0.5;
+}
+
+@mixin img-size {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin icon-vector {
+	height: 4.2rem;
+	width: 4.2rem;
+}
+
+.icon {
+	@include icon-vector;
+}

@@ -1,0 +1,209 @@
+.card {
+	border-radius: 1.8rem;
+	background-color: $color-secondary;
+	padding: 2rem 0;
+
+	.markets__heading {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding-bottom: 2rem !important;
+		border-bottom: 2px solid #0b0e11;
+
+		h4 {
+			margin-right: auto;
+		}
+		.icon {
+			@include icon-vector;
+		}
+		.icon-chevron {
+			height: 1rem;
+			width: 2rem;
+			fill: $color-white;
+		}
+	}
+}
+
+.main {
+	padding: 6.5rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	position: relative;
+	grid-gap: 2.5rem;
+
+	.left-sidebar {
+		background-color: $color-black;
+	}
+	.right-sidebar {
+		background-color: $color-black;
+	}
+
+	.display {
+	}
+
+	.markets {
+		&__search {
+			padding: 2.1rem;
+			border-bottom: 2px solid #0b0e11;
+		}
+		&__form {
+			width: 100%;
+			height: 4.9rem;
+			background-color: #0b0e11;
+			display: flex;
+			align-items: center;
+			padding: 2rem;
+			border-radius: 5rem;
+			.icon {
+				fill: $color-white;
+				height: 2rem;
+				width: 2rem;
+			}
+		}
+		&__input {
+			height: 100%;
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: $color-white;
+			font-size: 16px;
+			padding: 2rem 0;
+		}
+
+		&__btns {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 2px solid #0b0e11;
+			height: 8rem;
+		}
+
+		&__btn {
+			width: 100%;
+			padding: 2.5rem;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: #5e5e63;
+			cursor: pointer;
+			font-size: 1.6rem;
+			font-weight: 800;
+			transition: all 0.3s;
+			border-bottom: 3px solid transparent;
+
+			&:hover {
+				color: $color-white;
+				border-bottom: 3px solid $color-primary;
+			}
+		}
+
+		.line {
+			height: 100%;
+			width: 0.2rem;
+			background-color: #181d24;
+		}
+	}
+}
+
+.list {
+	//   padding: 1.5rem;
+	.item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 2px solid #181d24;
+		padding: 2rem;
+		font-size: 1.6rem;
+		font-weight: 400;
+
+		&:last-child {
+			border-bottom: 0px solid #181d24;
+		}
+
+		span {
+			display: flex;
+			align-items: center;
+		}
+
+		.icon,
+		img {
+			height: 3.5rem;
+			width: 3.5rem;
+		}
+	}
+
+	.head {
+		color: #5e5e63;
+		border-bottom: none;
+		font-size: 1.6rem;
+	}
+}
+
+.conversation {
+	.markets__btn {
+		display: flex;
+		align-items: center;
+
+		.icon {
+			height: 2.9rem;
+			width: 2.9rem;
+			fill: #5e5e63;
+		}
+
+		&:hover {
+			.icon {
+				height: 2.9rem;
+				width: 2.9rem;
+				fill: $color-primary;
+			}
+		}
+	}
+
+	.markets__search {
+		border-top: 2px solid #181d24;
+		border-bottom: none;
+
+		.icon-cam {
+			fill: #5e5e63;
+			height: 2.4rem;
+			width: 3rem;
+		}
+		.icon-submit {
+			height: 3.3rem;
+			width: 3.3rem;
+		}
+	}
+	.list {
+		.item {
+			display: flex;
+			justify-content: start;
+			align-items: start;
+			gap: 0 2.4rem;
+			padding: 1.5rem 2rem;
+
+			.user-photo {
+				height: 3.6rem;
+				width: 3.6rem;
+				border-radius: 50%;
+
+				img {
+					@include img-size;
+					transform: scale(0.5);
+				}
+			}
+
+			.details {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+				gap: 1rem;
+
+				.message-time,
+				span {
+					color: #5e5e63;
+				}
+			}
+		}
+	}
+}
